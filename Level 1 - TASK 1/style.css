@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    font-size: 1.2rem; /* Increase base font size */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #333;
+    color: white;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem; /* Increase heading size */
+    font-weight: 600;
+    padding: 0.5rem; /* Add some padding for better visibility */
+}
+
+header nav {
+    margin-left: auto;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: larger;
+   
+}
+
+/* Hover effect for navigation buttons */
+header nav li a:hover {
+    background-color: lightgrey; /* Change the background color on hover */
+    color: #333; /* Change the text color if desired */
+    border-radius: 5px; /* Optional: add border radius to match the buttons */
+}
+
+header p {
+    width: 100%;
+    text-align: left;
+    margin-top: 0.5rem;
+    font-style: bold;
+    font-family:  Geneva;
+    font-size: larger;
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    font-family: Geneva;
+    
+    font-size: x-large;
+}
+
+.about-container img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    margin: 0.5rem 0;
+    font-size: x-large;
+    font-family: Geneva;
+}
+
+.stars {
+    margin-left: 0.5rem;
+}
+
+.project {
+    margin-bottom: 2rem;
+}
+
+.project img {
+    width: cover;
+    max-width: 500px;
+    height: auto;
+    
+}
+
+.download-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+
+/* Style for all headings */
+ h2, h3, h4, h5, h6 {
+    background-color: rgb(216, 213, 213); /* Dark grey background for all headings */
+    padding: 0.5rem; /* Add some padding for better visibility */
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
