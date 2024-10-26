@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Deepadharsini | EasyPass</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">easy<span>Pass</span></a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#">Destination</a></li>
+        <li><a href="#">Package</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="nav__btns">
+        <button class="btn sign__up">Sign Up</button>
+        <button class="btn sign__in">Sign In</button>
+      </div>
+    </nav>
+
+    <header class="header__container">
+      <div class="header__image">
+        <div class="header__image__card header__image__card-2">
+          <span><i class="ri-passport-line"></i></span>
+          Flight Tickets
+        </div>
+        <div class="header__image__card header__image__card-3">
+          <span><i class="ri-map-2-line"></i></span>
+          Local Events
+        </div>
+        <div class="header__image__card header__image__card-4">
+          <span><i class="ri-guide-line"></i></span>
+           Event Guide
+        </div>
+        <img src="assets/background_image.jpg" alt="header" />
+      </div>
+
+      <div class="header__content">
+        <h1>GET READY!<br />YOUR <span>NEXT</span> ADVENTURE AWAITS</h1>
+        <p>
+          Begin Your Journey Today and Explore Untouched Wonders Across the Globe – Your Adventure Awaits with Thrilling Experiences, Lasting Memories, and Boundless Possibilities
+        </p>
+        <form action="/">
+          <div class="input__row">
+            <div class="input__group">
+              <h5>Destination</h5>
+              <div>
+                <span><i class="ri-map-pin-line"></i></span>
+                <input type="text" value="Coimbatore,Tamil Nadu" readonly />
+              </div>
+            </div>
+            <div class="input__group">
+              <h5>Date</h5>
+              <div>
+                <span><i class="ri-calendar-2-line"></i></span>
+                <input type="text" id="currentDate" readonly />
+              </div>
+            </div>
+          </div>
+          <button type="submit">Search</button>
+        </form>
+        <div class="bar">
+          Copyright © 2024 Deepadharsini. All rights reserved.
+        </div>
+      </div>
+    </header>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    <script>
+      // JavaScript to display the current date
+      const dateElement = document.getElementById("currentDate");
+      const today = new Date();
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      dateElement.value = today.toLocaleDateString('en-IN', options); // Displays the current date in the format: 17 October 2024
+    </script>
+  </body>
+</html>
